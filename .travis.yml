@@ -12,10 +12,10 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: 'us-east-1'
-  app: 'docker'
+  region: '***************** aws region where you want to deploy *********************'
+  app: '************app name you given **********'
   env: 'docker-env'
-  bucket_name: 'elasticbeanstalk-us-east-1-923445559289'
+  bucket_name: '*******aws s3 bucket name ************'
   bucket_path: 'docker'
   on:
     branch: master
